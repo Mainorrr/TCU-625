@@ -1,7 +1,7 @@
 # TCU-625
 
-Para iniciar servidor con el proyecto de react:
-npm run dev
+Si no se han instalado las dependencias:
+npm install 
 
-Mainor Castro
-Dariel Álvarez (Creo que este era su apellido perdón si no es jajaj)
+Para ejecutar el proyecto en modo de desarrollo:
+npm run dev
