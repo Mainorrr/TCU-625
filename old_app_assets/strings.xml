@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Juego Alimentos Bribri</string>
+    <string name="title_home">Inicio</string>
+    <string name="aprende">Aprende</string>
+    <string name="creditos">Créditos</string>
+    <string name="t_animales">Íyiwak ena íyiwak siõˈ</string>
+    <string name="t_verduras">Kàlwö ena ár</string>
+    <string name="t_animalesEspeciales">Íyiwak íse katéke bitsé tã</string>
+    <string name="t_dulcesForaneosBebidas">Yè, chĩˈwö ena síkua chkè</string>
+    <string name="t_utensilio">Wes i alèke ena tkãˈ / tchõˈ</string>
+    <string name="t_aleatorio">"Íyi ulìtãne "</string>
+    <string name="imagen">Imagen</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="item">Item</string>
+    <string name="flecha_derecha"><![CDATA[>]]></string>
+    <string name="ayuda">Ayuda</string>
+    <string name="salir">Salir</string>
+    <string name="sonido">Sonido</string>
+    <string name="correcta">Respuesta correcta</string>
+    <string name="incorrecta">Respuesta incorrecta</string>
+    <string name="respuesta">Respuesta</string>
+    <string name="palabra">Palabra</string>
+    <string name="question">Q?</string>
+    <string name="mensajeAyuda">Seleccione alguno de los botones con los distintos temas para empezar a jugar. Luego en la parte superior aparecerá un texto, debe buscar entre las imágenes la correspondiente a la palabra mostrada.</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="resultados">Resultados</string>
+    <string name="vocabulario">Vocabulario</string>
+    <string name="desconocido">Desconocido</string>
+
+    <string name="coautores_n">Trinidad Segura Segura, Sandra Segura Morales, Vicenta Segura García, Lilliam Segura García, Anastasia Segura García, Sebastiana Segura García, Fausto Morales López, Leomicia Rojas Morales, Seidy Sánchez Morales.</string>
+    <string name="coautores_t">Coautores miembros del pueblo bribri con quienes se documentó el conocimiento cultural y lingüístico:</string>
+    <string name="contacto_i">dipalicori.efll@ucr.ac.cr</string>
+    <string name="contacto_t">Contacto:</string>
+    <string name="diagramacion_n">Nombres</string>
+    <string name="diagramacion_t">Diagramación y artes finales:</string>
+    <string name="documentacion_n">Carlos Sánchez Avendaño, Luis Serrato Pineda</string>
+    <string name="documentacion_t">Documentación lingüística y coordinación general del proyecto:</string>
+    <string name="documentacionv_n">Fabiola Cordero Cantillo, Nathalia Valerín Vargas, José Fabián Bolaños Villegas</string>
+    <string name="documentacionv_t">Documentación fotográfica y videográfica:</string>
+    <string name="encabezado_creditos">UNIVERSIDAD DE COSTA RICA\nVICERRECTORÍA DE ACCIÓN SOCIAL\nSECCIÓN DE EXTENSIÓN CULTURAL\nSECCIÓN DE TRABAJO COMUNAL UNIVERSITARIO\nESCUELA DE FILOLOGÍA, LINGÜÍSTICA Y LITERATURA\nEC-408 “DIVERSIDAD Y PATRIMONIO LINGÜÍSTICO DE COSTA RICA”\nTC-625 “LENGUAS Y TRADICIONES ORALES DE COSTA RICA”</string>
+    <string name="icono_n">Carina Elizondo Valverde</string>
+    <string name="icono_t">Diseño del ícono:</string>
+    <string name="ilustraciones_n">Fabiola Cordero Cantillo, Nathalia Valerín Vargas, José Fabián Bolaños Villegas, Francini Gómez Calderón</string>
+    <string name="ilustraciones_t">Ilustraciones:</string>
+    <string name="info_ucr">Material de distribución gratuita. La creación y publicación de este material fue posible gracias al financiamiento de la Vicerrectoría de Acción Social de la Universidad de Costa Rica</string>
+    <string name="programacion_n">Isabela Rodríguez Rocha, Carina Elizondo Valverde</string>
+    <string name="programacion_t">Programación y diseño de la aplicación:</string>
+    <string name="redaccion_n">Nombres</string>
+    <string name="redaccion_t">Redacción y corrección de los textos:</string>
+    <string name="titulo_diccionario_creditos">NOMBRE: Juego Alimentos Bribri</string>
+    <string name="voz_n">Alí García Segura</string>
+    <string name="voz_t">Voz de los audios en bribri:</string>
+    <string name="logoucr">logoUCR</string>
+    <string name="title">Título</string>
+</resources>
