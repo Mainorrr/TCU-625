@@ -34,9 +34,13 @@
   transition: color 0.2s;
 }
 
-.header__nav a:hover,
+.header__nav a:hover {
+   color: #ddc5a2;
+}
+
 .header__nav a.active {
   color: #ffffff;
   border-bottom: 2px solid #ffffff;
   padding-bottom: 2px;
 }
+
