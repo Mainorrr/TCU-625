@@ -1,5 +1,5 @@
 .header {
-  background-color: #c8a97e;
+  background-color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,7 +27,7 @@
 
 .header__nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-text-on-primary);
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.03em;
@@ -35,12 +35,11 @@
 }
 
 .header__nav a:hover {
-   color: #ddc5a2;
+  color: var(--color-primary-light);
 }
 
 .header__nav a.active {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
+  color: var(--color-text-on-primary);
+  border-bottom: 2px solid var(--color-text-on-primary);
   padding-bottom: 2px;
 }
-
