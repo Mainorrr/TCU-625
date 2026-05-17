@@ -29,6 +29,31 @@ body {
   min-height: 100vh;
   background: var(--color-bg);
   color: var(--color-text);
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 137, 106, 0.35);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 137, 106, 0.6);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(168, 137, 106, 0.35) transparent;
 }
 
 a {

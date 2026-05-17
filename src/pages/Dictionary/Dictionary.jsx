@@ -91,9 +91,9 @@ function Pagination({ pagina, totalPaginas, setPagina, className = '' }) {
 function Dictionary() {
   const [seccion, setSeccion] = useState(secciones[0].nombre);
   const [pagina, setPagina] = useState(0);
-  const [playingId, setPlayingId] = useState(null);
+  const [playingIds, setPlayingIds] = useState(new Set());
   const [shakingId, setShakingId] = useState(null);
-  const audioRef = useRef(null);
+  const playingCounts = useRef(new Map());
   const shakeTimerRef = useRef(null);
 
   const palabras = useMemo(() => recetario[seccion] ?? [], [seccion]);
@@ -108,6 +108,20 @@ function Dictionary() {
     setPagina(0);
   };
 
+  const decrementCount = (id) => {
+    const count = (playingCounts.current.get(id) ?? 1) - 1;
+    if (count <= 0) {
+      playingCounts.current.delete(id);
+      setPlayingIds((prev) => {
+        const next = new Set(prev);
+        next.delete(id);
+        return next;
+      });
+    } else {
+      playingCounts.current.set(id, count);
+    }
+  };
+
   const reproducir = (url, id) => {
     if (!url) {
       if (shakeTimerRef.current) clearTimeout(shakeTimerRef.current);
@@ -116,11 +130,13 @@ function Dictionary() {
       shakeTimerRef.current = setTimeout(() => setShakingId(null), 500);
       return;
     }
-    if (!audioRef.current) return;
-    audioRef.current.src = url;
-    audioRef.current.currentTime = 0;
-    setPlayingId(id);
-    audioRef.current.play().catch(() => setPlayingId(null));
+
+    const audio = new Audio(url);
+    playingCounts.current.set(id, (playingCounts.current.get(id) ?? 0) + 1);
+    setPlayingIds((prev) => new Set(prev).add(id));
+
+    audio.play().catch(() => decrementCount(id));
+    audio.addEventListener('ended', () => decrementCount(id));
   };
 
   return (
@@ -167,7 +183,7 @@ function Dictionary() {
                   onClick={() => reproducir(audioSrc, id)}
                 >
                   {audioSrc ? (
-                    <AudioIcon playing={playingId === id} />
+                    <AudioIcon playing={playingIds.has(id)} />
                   ) : (
                     <NoAudioIcon shaking={shakingId === id} />
                   )}
@@ -191,12 +207,6 @@ function Dictionary() {
         </>
       )}
 
-      <audio
-        ref={audioRef}
-        preload="auto"
-        onEnded={() => setPlayingId(null)}
-        onPause={() => setPlayingId(null)}
-      />
     </main>
   );
 }

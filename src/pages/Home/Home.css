@@ -1,0 +1,117 @@
+.home {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+/* Hero */
+.home__hero {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.home__title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.home__subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  max-width: 620px;
+  margin: 0 auto 0;
+  line-height: 1.7;
+}
+
+/* Cards */
+.home__cards-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 1.5rem;
+}
+
+.home__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.home__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border);
+  border-radius: 14px;
+  padding: 2rem 1.5rem 1.75rem;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
+}
+
+.home__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(58, 46, 34, 0.1);
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.home__card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.1rem;
+  font-size: 1.75rem;
+  flex-shrink: 0;
+}
+
+.home__card-icon--games {
+  background: #ede4d8;
+}
+
+.home__card-icon--dict {
+  background: #daeae5;
+}
+
+.home__card-icon--info {
+  background: #f5ead9;
+}
+
+.home__card-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-dark);
+}
+
+.home__card-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .home__cards {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .home__title {
+    font-size: 1.8rem;
+  }
+}
