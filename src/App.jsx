@@ -7,7 +7,7 @@ import Dictionary from './pages/Dictionary/Dictionary.jsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/TCU-625">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
