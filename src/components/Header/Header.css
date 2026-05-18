@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: var(--color-primary);
   display: flex;
   align-items: center;
@@ -42,4 +43,102 @@
   color: var(--color-text-on-primary);
   border-bottom: 2px solid var(--color-text-on-primary);
   padding-bottom: 2px;
+}
+
+.header__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__toggle:focus,
+.header__toggle:focus-visible {
+  outline: 2px solid var(--color-text-on-primary);
+  outline-offset: 2px;
+}
+
+.header__bar {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 0 auto;
+  border-radius: 2px;
+  background: var(--color-text-on-primary);
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.header__toggle--open .header__bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.header__toggle--open .header__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.header__toggle--open .header__bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .header__logo {
+    height: 48px;
+  }
+
+  .header__toggle {
+    display: flex;
+  }
+
+  .header__nav-wrap {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 20;
+  }
+
+  .header__nav-wrap--open {
+    max-height: 320px;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+  }
+
+  .header__nav li {
+    width: 100%;
+  }
+
+  .header__nav a {
+    display: block;
+    padding: 0.9rem 1.5rem;
+  }
+
+  .header__nav a:hover {
+    background: var(--color-primary-dark);
+    color: var(--color-text-on-primary);
+  }
+
+  .header__nav a.active {
+    border-bottom: none;
+    padding-bottom: 0.9rem;
+    background: var(--color-primary-dark);
+  }
 }

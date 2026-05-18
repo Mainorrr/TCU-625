@@ -229,20 +229,7 @@
   padding: 0.4rem 0.7rem;
 }
 
-.dictionary__page-btn--active {
-  background: var(--color-primary) !important;
-  color: var(--color-text-on-primary);
-  border-color: var(--color-primary) !important;
-}
-
-.dictionary__page-ellipsis {
-  padding: 0 0.25rem;
-  color: var(--color-text-muted);
-  user-select: none;
-}
-
 .dictionary__page-status {
-  display: none;
   font-weight: 600;
   color: var(--color-text);
   padding: 0 0.5rem;
@@ -289,15 +276,6 @@
 @media (max-width: 600px) {
   .dictionary h1 {
     font-size: 2.2em;
-  }
-
-  .dictionary__page-btn,
-  .dictionary__page-ellipsis {
-    display: none;
-  }
-
-  .dictionary__page-status {
-    display: inline-block;
   }
 
   .dictionary__pagination {

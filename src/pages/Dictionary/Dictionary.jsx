@@ -50,35 +50,6 @@ function AudioIcon({ playing = false }) {
   );
 }
 
-function getPageItems(current, total) {
-  const delta = 1;
-  const pages = [];
-  for (let i = 0; i < total; i++) {
-    if (
-      i === 0 ||
-      i === total - 1 ||
-      (i >= current - delta && i <= current + delta)
-    ) {
-      pages.push(i);
-    }
-  }
-
-  const items = [];
-  let prev;
-  for (const i of pages) {
-    if (prev !== undefined) {
-      if (i - prev === 2) {
-        items.push(prev + 1);
-      } else if (i - prev > 2) {
-        items.push(`gap-${prev}`);
-      }
-    }
-    items.push(i);
-    prev = i;
-  }
-  return items;
-}
-
 function Pagination({ pagina, totalPaginas, setPagina, className = '' }) {
   return (
     <div className={`dictionary__pagination ${className}`}>
@@ -91,27 +62,6 @@ function Pagination({ pagina, totalPaginas, setPagina, className = '' }) {
       >
         ‹
       </button>
-      {getPageItems(pagina, totalPaginas).map((item) =>
-        typeof item === 'string' ? (
-          <span key={item} className="dictionary__page-ellipsis" aria-hidden="true">
-            …
-          </span>
-        ) : (
-          <button
-            key={item}
-            type="button"
-            className={
-              'dictionary__page-btn' +
-              (item === pagina ? ' dictionary__page-btn--active' : '')
-            }
-            onClick={() => setPagina(item)}
-            aria-label={`Página ${item + 1}`}
-            aria-current={item === pagina ? 'page' : undefined}
-          >
-            {item + 1}
-          </button>
-        )
-      )}
       <span className="dictionary__page-status" aria-live="polite">
         {pagina + 1} / {totalPaginas}
       </span>
