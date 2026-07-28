@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #c8a97e;
+  --color-primary: #edaa2f;
   --color-primary-dark: #a8896a;
   --color-primary-light: #ddc5a2;
   --color-surface: #ffffff;
@@ -9,7 +9,8 @@
   --color-border-strong: #c8a97e;
   --color-text: #3a2e22;
   --color-text-muted: #7a6a58;
-  --color-text-on-primary: #ffffff;
+  --color-text-on-primary: #000000;
+  --color-text-background: #db9413;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

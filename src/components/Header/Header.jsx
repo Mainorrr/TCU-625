@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/common/logo_white.png';
+import logo from '../../assets/common/logo.png';
 import './Header.css';
 
 function Header() {
@@ -32,9 +32,10 @@ function Header() {
       >
         <ul className="header__nav">
           <li><NavLink to="/" end onClick={close}>Inicio</NavLink></li>
-          <li><NavLink to="/juegos" onClick={close}>Juegos</NavLink></li>
-          <li><NavLink to="/diccionario" onClick={close}>Diccionario</NavLink></li>
-          <li><NavLink to="/informacion" onClick={close}>Información</NavLink></li>
+          <li><NavLink to="/vocabulario" onClick={close}>Vocabulario</NavLink></li>
+          <li><NavLink to="/sobre-este-recurso" onClick={close}>Sobre este recurso</NavLink></li>
+          <li><NavLink to="/creditos" onClick={close}>Créditos</NavLink></li>
+          <li><NavLink to="/sobre-el-tcu-625" onClick={close}>Sobre el TCU-625</NavLink></li>
         </ul>
       </nav>
     </header>

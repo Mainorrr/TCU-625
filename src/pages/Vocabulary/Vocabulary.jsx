@@ -2,7 +2,7 @@ import { useMemo, useRef, useState } from 'react';
 import secciones from '../../assets/bribri_words/secciones.json';
 import recetario from '../../assets/bribri_words/recetario.json';
 import { getImage, getAudio } from './assetMaps.js';
-import './Dictionary.css';
+import './Vocabulary.css';
 
 const PAGE_SIZE = 12;
 
@@ -10,8 +10,8 @@ function NoAudioIcon({ shaking = false }) {
   return (
     <svg
       className={
-        'dictionary__audio-icon dictionary__audio-icon--off' +
-        (shaking ? ' dictionary__audio-icon--shaking' : '')
+        'vocabulary__audio-icon vocabulary__audio-icon--off' +
+        (shaking ? ' vocabulary__audio-icon--shaking' : '')
       }
       viewBox="0 0 24 24"
       width="26"
@@ -32,8 +32,8 @@ function AudioIcon({ playing = false }) {
   return (
     <svg
       className={
-        'dictionary__audio-icon dictionary__audio-icon--on' +
-        (playing ? ' dictionary__audio-icon--playing' : '')
+        'vocabulary__audio-icon vocabulary__audio-icon--on' +
+        (playing ? ' vocabulary__audio-icon--playing' : '')
       }
       viewBox="0 0 24 24"
       width="26"
@@ -52,22 +52,22 @@ function AudioIcon({ playing = false }) {
 
 function Pagination({ pagina, totalPaginas, setPagina, className = '' }) {
   return (
-    <div className={`dictionary__pagination ${className}`}>
+    <div className={`vocabulary__pagination ${className}`}>
       <button
         type="button"
-        className="dictionary__page-nav"
+        className="vocabulary__page-nav"
         onClick={() => setPagina((p) => Math.max(0, p - 1))}
         disabled={pagina === 0}
         aria-label="Página anterior"
       >
         ‹
       </button>
-      <span className="dictionary__page-status" aria-live="polite">
+      <span className="vocabulary__page-status" aria-live="polite">
         {pagina + 1} / {totalPaginas}
       </span>
       <button
         type="button"
-        className="dictionary__page-nav"
+        className="vocabulary__page-nav"
         onClick={() => setPagina((p) => Math.min(totalPaginas - 1, p + 1))}
         disabled={pagina >= totalPaginas - 1}
         aria-label="Página siguiente"
@@ -78,7 +78,7 @@ function Pagination({ pagina, totalPaginas, setPagina, className = '' }) {
   );
 }
 
-function Dictionary() {
+function Vocabulary() {
   const [seccion, setSeccion] = useState(secciones[0].nombre);
   const [pagina, setPagina] = useState(0);
   const [playingIds, setPlayingIds] = useState(new Set());
@@ -130,13 +130,13 @@ function Dictionary() {
   };
 
   return (
-    <main className="dictionary">
-      <h1>Diccionario</h1>
+    <main className="vocabulary">
+      <h1>Vocabulario</h1>
 
-      <div className="dictionary__header">
-        <label className="dictionary__selector">
-          <span className="dictionary__selector-label">Categoría</span>
-          <span className="dictionary__select-wrapper">
+      <div className="vocabulary__header">
+        <label className="vocabulary__selector">
+          <span className="vocabulary__selector-label">Categoría</span>
+          <span className="vocabulary__select-wrapper">
             <select value={seccion} onChange={handleSeccionChange}>
               {secciones.map((s) => (
                 <option key={s.nombre} value={s.nombre}>
@@ -151,16 +151,16 @@ function Dictionary() {
             pagina={pagina}
             totalPaginas={totalPaginas}
             setPagina={setPagina}
-            className="dictionary__pagination--top"
+            className="vocabulary__pagination--top"
           />
         )}
       </div>
 
       {palabras.length === 0 ? (
-        <p className="dictionary__empty">No hay palabras en esta sección.</p>
+        <p className="vocabulary__empty">No hay palabras en esta sección.</p>
       ) : (
         <>
-          <div className="dictionary__grid">
+          <div className="vocabulary__grid">
             {palabrasPagina.map((p, i) => {
               const imgSrc = getImage(p.imagen);
               const audioSrc = getAudio(p.audio);
@@ -169,7 +169,7 @@ function Dictionary() {
                 <button
                   key={id}
                   type="button"
-                  className="dictionary__card"
+                  className="vocabulary__card"
                   onClick={() => reproducir(audioSrc, id)}
                 >
                   {audioSrc ? (
@@ -178,11 +178,11 @@ function Dictionary() {
                     <NoAudioIcon shaking={shakingId === id} />
                   )}
                   {imgSrc ? (
-                    <img className="dictionary__image" src={imgSrc} alt={p.nombre} />
+                    <img className="vocabulary__image" src={imgSrc} alt={p.nombre} />
                   ) : (
-                    <div className="dictionary__placeholder">Sin imagen</div>
+                    <div className="vocabulary__placeholder">Sin imagen</div>
                   )}
-                  <span className="dictionary__name">{p.nombre}</span>
+                  <span className="vocabulary__name">{p.nombre}</span>
                 </button>
               );
             })}
@@ -192,7 +192,7 @@ function Dictionary() {
             pagina={pagina}
             totalPaginas={totalPaginas}
             setPagina={setPagina}
-            className="dictionary__pagination--bottom"
+            className="vocabulary__pagination--bottom"
           />
         </>
       )}
@@ -201,4 +201,4 @@ function Dictionary() {
   );
 }
 
-export default Dictionary;
+export default Vocabulary;
