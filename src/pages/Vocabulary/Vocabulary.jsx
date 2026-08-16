@@ -2,7 +2,6 @@ import { useMemo, useRef, useState } from 'react';
 import secciones from '../../assets/bribri_words/secciones.json';
 import recetario from '../../assets/bribri_words/recetario.json';
 import { getImage, getAudio } from './assetMaps.js';
-import './Vocabulary.css';
 
 
 function NoAudioIcon({ shaking = false }) {
