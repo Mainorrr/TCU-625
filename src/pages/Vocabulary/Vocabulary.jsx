@@ -2,9 +2,7 @@ import { useMemo, useRef, useState } from 'react';
 import secciones from '../../assets/bribri_words/secciones.json';
 import recetario from '../../assets/bribri_words/recetario.json';
 import { getImage, getAudio } from './assetMaps.js';
-import './Vocabulary.css';
 
-const PAGE_SIZE = 12;
 
 function NoAudioIcon({ shaking = false }) {
   return (
@@ -50,52 +48,20 @@ function AudioIcon({ playing = false }) {
   );
 }
 
-function Pagination({ pagina, totalPaginas, setPagina, className = '' }) {
-  return (
-    <div className={`vocabulary__pagination ${className}`}>
-      <button
-        type="button"
-        className="vocabulary__page-nav"
-        onClick={() => setPagina((p) => Math.max(0, p - 1))}
-        disabled={pagina === 0}
-        aria-label="Página anterior"
-      >
-        ‹
-      </button>
-      <span className="vocabulary__page-status" aria-live="polite">
-        {pagina + 1} / {totalPaginas}
-      </span>
-      <button
-        type="button"
-        className="vocabulary__page-nav"
-        onClick={() => setPagina((p) => Math.min(totalPaginas - 1, p + 1))}
-        disabled={pagina >= totalPaginas - 1}
-        aria-label="Página siguiente"
-      >
-        ›
-      </button>
-    </div>
-  );
-}
 
 function Vocabulary() {
   const [seccion, setSeccion] = useState(secciones[0].nombre);
-  const [pagina, setPagina] = useState(0);
   const [playingIds, setPlayingIds] = useState(new Set());
   const [shakingId, setShakingId] = useState(null);
   const playingCounts = useRef(new Map());
   const shakeTimerRef = useRef(null);
 
   const palabras = useMemo(() => recetario[seccion] ?? [], [seccion]);
-  const totalPaginas = Math.max(1, Math.ceil(palabras.length / PAGE_SIZE));
-  const palabrasPagina = useMemo(
-    () => palabras.slice(pagina * PAGE_SIZE, pagina * PAGE_SIZE + PAGE_SIZE),
-    [palabras, pagina]
-  );
+  const palabrasPagina = palabras; // Mostrar todas las palabras en una sola página (sin paginación)
+
 
   const handleSeccionChange = (e) => {
     setSeccion(e.target.value);
-    setPagina(0);
   };
 
   const decrementCount = (id) => {
@@ -146,14 +112,6 @@ function Vocabulary() {
             </select>
           </span>
         </label>
-        {palabras.length > 0 && (
-          <Pagination
-            pagina={pagina}
-            totalPaginas={totalPaginas}
-            setPagina={setPagina}
-            className="vocabulary__pagination--top"
-          />
-        )}
       </div>
 
       {palabras.length === 0 ? (
@@ -164,7 +122,7 @@ function Vocabulary() {
             {palabrasPagina.map((p, i) => {
               const imgSrc = getImage(p.imagen);
               const audioSrc = getAudio(p.audio);
-              const id = `${seccion}-${pagina}-${i}`;
+              const id = `${seccion}-${i}`;
               return (
                 <button
                   key={id}
@@ -188,12 +146,6 @@ function Vocabulary() {
             })}
           </div>
 
-          <Pagination
-            pagina={pagina}
-            totalPaginas={totalPaginas}
-            setPagina={setPagina}
-            className="vocabulary__pagination--bottom"
-          />
         </>
       )}
 
