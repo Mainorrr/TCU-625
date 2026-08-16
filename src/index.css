@@ -95,7 +95,7 @@ button:focus-visible {
 /* Vocabulary styles moved from src/pages/Vocabulary/Vocabulary.css */
 .vocabulary {
   padding: 1.5rem;
-  max-width: 1200px;
+  max-width: 1400px; /* increased width so content has more horizontal room on large screens */
   margin: 0 auto;
 }
 
@@ -103,7 +103,7 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  align-items: flex-end;
+  align-items: center; /* center nav vertically with title */
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
@@ -175,6 +175,177 @@ button:focus-visible {
   outline: none;
   border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(200, 169, 126, 0.3);
+}
+
+/* Tabs for vocabulary categories */
+.vocabulary__tabs {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content; /* each column fits its content */
+  width: 100%; /* take full available width so spacing works correctly */
+  gap: 1rem; /* larger gap to avoid visual collision */
+  align-items: center;
+  justify-content: start; /* items start from left; overflow allows scrolling */
+  overflow-x: auto; /* allow horizontal scrolling on small screens */
+  overflow-y: visible; /* allow vertical overflow (shadows) to be visible */
+  padding: 0.75rem 0.6rem; /* extra vertical padding so shadows aren't clipped */
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap; /* keep label text on single line */
+}
+
+/* On very large screens distribute tabs evenly */
+@media (min-width: 1200px) {
+  .vocabulary__tabs {
+    display: grid;
+    grid-auto-columns: 1fr; /* make each tab take equal fraction */
+    justify-content: space-between;
+  }
+  .vocabulary__tab {
+    justify-content: center;
+  }
+}
+
+.vocabulary__tab {
+  display: inline-flex;
+  flex-direction: column; /* stack icon above label */
+  align-items: center;
+  gap: 0.35rem;
+  white-space: normal; /* allow wrapping in label */
+  padding: 0.6rem 0.75rem; /* slightly taller to fit larger icon */
+  border-radius: 999px;
+  border: 1px solid var(--color-border); /* show border on whole tab like cards */
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease; /* only color and border changes */
+  flex: 0 0 auto; /* default: don't flex to avoid overlap */
+  text-align: center;
+  min-width: 72px; /* accommodate larger icon */
+  z-index: 1; /* base stacking so active can be above */
+  max-width: 200px; /* keep tabs reasonably sized */
+}
+
+/* On very large screens distribute tabs evenly */
+@media (min-width: 1200px) {
+  .vocabulary__tab {
+    flex: 1 1 0;
+  }
+}
+
+.vocabulary__tab-icon {
+  width: 48px; /* larger icon */
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: var(--color-bg-muted);
+  flex-shrink: 0;
+  border: none; /* icon has no border; whole tab has the border */
+}
+
+.vocabulary__tab-icon--placeholder {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.02));
+  border: none;
+}
+
+/* Remove icon border rules — borders are now applied to the whole tab */
+
+.vocabulary__tab-label {
+  display: block;
+  text-align: center;
+  max-width: 140px;
+  font-size: 0.88rem;
+  color: inherit;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* limit to 2 lines */
+  -webkit-box-orient: vertical;
+  line-height: 1.1em;
+} 
+
+/* Make icons slightly smaller on very small screens */
+@media (max-width: 600px) {
+  .vocabulary__tab-icon, .vocabulary__tab-icon--placeholder {
+    width: 40px;
+    height: 40px;
+  }
+  .vocabulary__tab-label {
+    max-width: 100px;
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+  }
+}
+
+.vocabulary__tab:hover {
+  /* On hover only change the border color to indicate focus — no movement or color change */
+  border-color: var(--color-primary);
+  background: var(--color-surface); /* keep background same on hover */
+}
+
+.vocabulary__tab:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.vocabulary__tab--active {
+  /* On active selection only change the color (background/text). No movement or border change */
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+  box-shadow: none;
+  transform: none;
+  /* keep the tab border on active but slightly darker if desired */
+  border-color: var(--color-border-strong);
+  z-index: 20; /* ensure active is above neighbors */
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .vocabulary__tabs {
+    gap: 0.45rem;
+    padding: 0.35rem 0.2rem;
+  }
+  .vocabulary__tab {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.9rem;
+    min-width: 76px;
+    flex: 0 0 auto; /* on smaller screens keep natural size and allow horizontal scroll */
+  }
+}
+
+@media (max-width: 600px) {
+  .vocabulary h1 {
+    font-size: 2.2em;
+  }
+
+  .vocabulary__card {
+    padding: 0.6rem;
+  }
+
+  .vocabulary__image,
+  .vocabulary__placeholder {
+    order: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .vocabulary__name {
+    order: 2;
+    font-size: 0.95rem;
+  }
+
+  .vocabulary__audio-icon {
+    position: static;
+    order: 3;
+    align-self: center;
+    margin-top: 0.5rem;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .vocabulary__grid {

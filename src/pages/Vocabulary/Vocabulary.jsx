@@ -56,7 +56,16 @@ function Vocabulary() {
   const playingCounts = useRef(new Map());
   const shakeTimerRef = useRef(null);
 
-  const palabras = useMemo(() => recetario[seccion] ?? [], [seccion]);
+  const palabras = useMemo(() => {
+    // If the "Aleatorio" (Todo) section is selected, concatenate the 5 category arrays
+    // in the order defined in secciones, preserving internal order of each category.
+    if (seccion === 'Aleatorio') {
+      return secciones
+        .filter((s) => s.nombre !== 'Aleatorio')
+        .flatMap((s) => recetario[s.nombre] ?? []);
+    }
+    return recetario[seccion] ?? [];
+  }, [seccion]);
   const palabrasPagina = palabras; // Mostrar todas las palabras en una sola página (sin paginación)
 
 
@@ -100,18 +109,47 @@ function Vocabulary() {
       <h1>Vocabulario</h1>
 
       <div className="vocabulary__header">
-        <label className="vocabulary__selector">
-          <span className="vocabulary__selector-label">Categoría</span>
-          <span className="vocabulary__select-wrapper">
-            <select value={seccion} onChange={handleSeccionChange}>
-              {secciones.map((s) => (
-                <option key={s.nombre} value={s.nombre}>
-                  {s.nombreBribri}
-                </option>
-              ))}
-            </select>
-          </span>
-        </label>
+        <nav className="vocabulary__tabs" role="tablist" aria-label="Categorías">
+          {secciones.map((s) => {
+            // Prefer explicit imagen field in secciones.json; otherwise fall back to
+            // the first palabra's imagen in that category (same logic as cards).
+            let iconSrc = null;
+            if (s.imagen) iconSrc = getImage(s.imagen);
+            if (!iconSrc) {
+              // For the special 'Aleatorio' section, find the first real category with an image
+              if (s.nombre === 'Aleatorio') {
+                const firstCat = secciones.find((x) => x.nombre !== 'Aleatorio');
+                if (firstCat) {
+                  const firstWord = (recetario[firstCat.nombre] ?? [])[0];
+                  if (firstWord) iconSrc = getImage(firstWord.imagen);
+                }
+              } else {
+                const firstWord = (recetario[s.nombre] ?? [])[0];
+                if (firstWord) iconSrc = getImage(firstWord.imagen);
+              }
+            }
+
+            return (
+              <button
+                key={s.nombre}
+                type="button"
+                role="tab"
+                aria-pressed={seccion === s.nombre}
+                className={
+                  'vocabulary__tab' + (seccion === s.nombre ? ' vocabulary__tab--active' : '')
+                }
+                onClick={() => setSeccion(s.nombre)}
+              >
+                {iconSrc ? (
+                  <img src={iconSrc} alt={s.nombre} className="vocabulary__tab-icon" />
+                ) : (
+                  <div className="vocabulary__tab-icon vocabulary__tab-icon--placeholder" aria-hidden="true" />
+                )}
+                <span className="vocabulary__tab-label">{s.nombreBribri}</span>
+              </button>
+            );
+          })}
+        </nav>
       </div>
 
       {palabras.length === 0 ? (

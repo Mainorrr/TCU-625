@@ -31,7 +31,7 @@ function Header() {
         className={'header__nav-wrap' + (open ? ' header__nav-wrap--open' : '')}
       >
         <ul className="header__nav">
-          <li><NavLink to="/" end onClick={close}>Inicio</NavLink></li>
+          <li><NavLink to="/" end onClick={close}>Práctica</NavLink></li>
           <li><NavLink to="/vocabulario" onClick={close}>Vocabulario</NavLink></li>
           <li><NavLink to="/sobre-este-recurso" onClick={close}>Sobre este recurso</NavLink></li>
           <li><NavLink to="/creditos" onClick={close}>Créditos</NavLink></li>
