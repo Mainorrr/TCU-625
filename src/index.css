@@ -179,58 +179,38 @@ button:focus-visible {
 
 /* Tabs for vocabulary categories */
 .vocabulary__tabs {
-  display: inline-grid;
-  grid-auto-flow: column;
-  grid-auto-columns: min-content; /* each column fits its content */
-  width: 100%; /* take full available width so spacing works correctly */
-  gap: 1rem; /* larger gap to avoid visual collision */
-  align-items: center;
-  justify-content: start; /* items start from left; overflow allows scrolling */
-  overflow-x: auto; /* allow horizontal scrolling on small screens */
-  overflow-y: visible; /* allow vertical overflow (shadows) to be visible */
-  padding: 0.75rem 0.6rem; /* extra vertical padding so shadows aren't clipped */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  width: 100%;
+  gap: 0.8rem;
+  align-items: stretch;
+  justify-items: stretch;
+  overflow: visible;
+  padding: 0.75rem 0.6rem;
   -webkit-overflow-scrolling: touch;
-  white-space: nowrap; /* keep label text on single line */
-}
-
-/* On very large screens distribute tabs evenly */
-@media (min-width: 1200px) {
-  .vocabulary__tabs {
-    display: grid;
-    grid-auto-columns: 1fr; /* make each tab take equal fraction */
-    justify-content: space-between;
-  }
-  .vocabulary__tab {
-    justify-content: center;
-  }
+  white-space: normal;
 }
 
 .vocabulary__tab {
   display: inline-flex;
-  flex-direction: column; /* stack icon above label */
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.35rem;
-  white-space: normal; /* allow wrapping in label */
-  padding: 0.6rem 0.75rem; /* slightly taller to fit larger icon */
+  white-space: normal;
+  width: 100%;
+  min-width: 0;
+  padding: 0.6rem 0.75rem;
   border-radius: 999px;
-  border: 1px solid var(--color-border); /* show border on whole tab like cards */
+  border: 1px solid var(--color-border);
   background: var(--color-surface);
   color: var(--color-text-muted);
   font-weight: 600;
   font-size: 0.95rem;
-  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease; /* only color and border changes */
-  flex: 0 0 auto; /* default: don't flex to avoid overlap */
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
   text-align: center;
-  min-width: 72px; /* accommodate larger icon */
-  z-index: 1; /* base stacking so active can be above */
-  max-width: 200px; /* keep tabs reasonably sized */
-}
-
-/* On very large screens distribute tabs evenly */
-@media (min-width: 1200px) {
-  .vocabulary__tab {
-    flex: 1 1 0;
-  }
+  z-index: 1;
+  max-width: none;
 }
 
 .vocabulary__tab-icon {
@@ -260,13 +240,11 @@ button:focus-visible {
   max-width: 140px;
   font-size: 0.88rem;
   color: inherit;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* limit to 2 lines */
-  -webkit-box-orient: vertical;
-  line-height: 1.1em;
-} 
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+  line-height: 1.2em;
+}
 
 /* Make icons slightly smaller on very small screens */
 @media (max-width: 600px) {
@@ -275,9 +253,9 @@ button:focus-visible {
     height: 40px;
   }
   .vocabulary__tab-label {
-    max-width: 100px;
+    max-width: none;
     font-size: 0.85rem;
-    -webkit-line-clamp: 2;
+    line-height: 1.25em;
   }
 }
 
