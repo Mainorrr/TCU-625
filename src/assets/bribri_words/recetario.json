@@ -410,14 +410,24 @@
   ],
   "Vegetales": [
     {
+      "nombre": "kalö́m",
+      "imagen": "kalom_platano",
+      "audio": "kalom_platano"
+    },
+    {
       "nombre": "alabà",
       "imagen": "alaba_camote",
       "audio": ""
     },
     {
-      "nombre": "ali’ / li’",
-      "imagen": "ali_yuca",
-      "audio": "ali_yuca"
+      "nombre": "apì / pì’",
+      "imagen": "api_ayote",
+      "audio": "api_ayote"
+    },
+    {
+      "nombre": "tu’ / salíröm / salírö",
+      "imagen": "tu_name",
+      "audio": "tu_name"
     },
     {
       "nombre": "amo’ / jamo’",
@@ -425,9 +435,24 @@
       "audio": ""
     },
     {
-      "nombre": "apì / pì’",
-      "imagen": "api_ayote",
-      "audio": "api_ayote"
+      "nombre": "sawák",
+      "imagen": "sawak_chayote",
+      "audio": "sawak_chayote"
+    },
+    {
+      "nombre": "ali’ / li’",
+      "imagen": "ali_yuca",
+      "audio": "ali_yuca"
+    },
+    {
+      "nombre": "dipa’ / sha’",
+      "imagen": "dipa_chile",
+      "audio": ""
+    },
+    {
+      "nombre": "dikó / dakó",
+      "imagen": "diko_pejibaye",
+      "audio": "diko_pejibaye"
     },
     {
       "nombre": "átu",
@@ -440,39 +465,9 @@
       "audio": ""
     },
     {
-      "nombre": "bla’ / bala’",
-      "imagen": "bla_bala_granadilla",
-      "audio": "bla_granadilla"
-    },
-    {
-      "nombre": "bròkö",
-      "imagen": "broko_calalu",
-      "audio": "broko_calalu"
-    },
-    {
-      "nombre": "chamù põlï / chamù ákie",
-      "imagen": "bananoverde",
-      "audio": "chamu_bananoverde"
-    },
-    {
-      "nombre": "chamùli",
-      "imagen": "bananomaduro",
-      "audio": "maduro_balo"
-    },
-    {
-      "nombre": "chi’",
-      "imagen": "chi_florortiga",
-      "audio": "chi_florortiga"
-    },
-    {
-      "nombre": "dikó / dakó",
-      "imagen": "diko_pejibaye",
-      "audio": "diko_pejibaye"
-    },
-    {
-      "nombre": "dipa’ / sha’",
-      "imagen": "dipa_chile",
-      "audio": ""
+      "nombre": "tsâ̱wö / tsò̱wö",
+      "imagen": "tsawo_guanabana",
+      "audio": "tsawo_guanabana"
     },
     {
       "nombre": "iám / iá",
@@ -480,39 +475,9 @@
       "audio": "iam_pacaya"
     },
     {
-      "nombre": "ikuö̀ / kuö̀ ",
-      "imagen": "ikuo_maiz",
-      "audio": "ikuo_maiz"
-    },
-    {
       "nombre": "kalóm",
       "imagen": "kalom_zapote",
       "audio": ""
-    },
-    {
-      "nombre": "kalö́m",
-      "imagen": "kalom_platano",
-      "audio": "kalom_platano"
-    },
-    {
-      "nombre": "kichö’",
-      "imagen": "kicho_papaya",
-      "audio": "kicho_papaya"
-    },
-    {
-      "nombre": "köpö̀wöshki",
-      "imagen": "kopowoshki_quelite",
-      "audio": "kopowoshki_quelite"
-    },
-    {
-      "nombre": "mánawö",
-      "imagen": "manawo_bananomorado",
-      "audio": "manawo_bananomorado"
-    },
-    {
-      "nombre": "màsawö",
-      "imagen": "masawo_bananopeq",
-      "audio": "masawo_bananopeq"
     },
     {
       "nombre": "ö̀lmè̱me̱",
@@ -520,9 +485,34 @@
       "audio": "olmeme_granadilla"
     },
     {
-      "nombre": "pó̱rpö",
-      "imagen": "porpo_platanillo",
-      "audio": "porpo_platanillo"
+      "nombre": "to̱mò̱",
+      "imagen": "tomo_guaba",
+      "audio": "tomo_guaba"
+    },
+    {
+      "nombre": "shulë̀wö",
+      "imagen": "frutillo_shulewo",
+      "audio": "shulewo"
+    },
+    {
+      "nombre": "ikuö̀ / kuö̀ ",
+      "imagen": "ikuo_maiz",
+      "audio": "ikuo_maiz"
+    },
+    {
+      "nombre": "bla’ / bala’",
+      "imagen": "bla_bala_granadilla",
+      "audio": "bla_granadilla"
+    },
+    {
+      "nombre": "kichö’",
+      "imagen": "kicho_papaya",
+      "audio": "kicho_papaya"
+    },
+    {
+      "nombre": "tsiru’ / tsuru’",
+      "imagen": "cacao",
+      "audio": "tsiru_cacao"
     },
     {
       "nombre": "salo’",
@@ -530,14 +520,64 @@
       "audio": "salo_cacao"
     },
     {
-      "nombre": "sawák",
-      "imagen": "sawak_chayote",
-      "audio": "sawak_chayote"
+      "nombre": "skuàlöm",
+      "imagen": "cacao_skualom",
+      "audio": "skualom"
     },
     {
-      "nombre": "shulë̀wö",
-      "imagen": "frutillo_shulewo",
-      "audio": "shulewo"
+      "nombre": "wë̀röm",
+      "imagen": "werom_cacao",
+      "audio": "werom_cacao"
+    },
+    {
+      "nombre": "wë̀shwö",
+      "imagen": "weshwo_cacao",
+      "audio": "weshwo_cacao"
+    },
+    {
+      "nombre": "màsawö",
+      "imagen": "masawo_bananopeq",
+      "audio": "masawo_bananopeq"
+    },
+    {
+      "nombre": "chamùli",
+      "imagen": "bananomaduro",
+      "audio": "maduro_balo"
+    },
+    {
+      "nombre": "mánawö",
+      "imagen": "manawo_bananomorado",
+      "audio": "manawo_bananomorado"
+    },
+    {
+      "nombre": "chamù põlï / chamù ákie",
+      "imagen": "bananoverde",
+      "audio": "chamu_bananoverde"
+    },
+    {
+      "nombre": "bròkö",
+      "imagen": "broko_calalu",
+      "audio": "broko_calalu"
+    },
+    {
+      "nombre": "chi’",
+      "imagen": "chi_florortiga",
+      "audio": "chi_florortiga"
+    },
+    {
+      "nombre": "ski’kuö",
+      "imagen": "skikuo_hongo",
+      "audio": "skikuo_hongo"
+    },
+    {
+      "nombre": "köpö̀wöshki",
+      "imagen": "kopowoshki_quelite",
+      "audio": "kopowoshki_quelite"
+    },
+    {
+      "nombre": "pó̱rpö",
+      "imagen": "porpo_platanillo",
+      "audio": "porpo_platanillo"
     },
     {
       "nombre": "si͂́ / dapö̀",
@@ -548,88 +588,13 @@
       "nombre": "sí̱rpö",
       "imagen": "sirpo_palmito",
       "audio": "sirpo_palmito"
-    },
-    {
-      "nombre": "ski’kuö",
-      "imagen": "skikuo_hongo",
-      "audio": "skikuo_hongo"
-    },
-    {
-      "nombre": "skuàlöm",
-      "imagen": "cacao_skualom",
-      "audio": "skualom"
-    },
-    {
-      "nombre": "to̱mò̱",
-      "imagen": "tomo_guaba",
-      "audio": "tomo_guaba"
-    },
-    {
-      "nombre": "tsâ̱wö / tsò̱wö",
-      "imagen": "tsawo_guanabana",
-      "audio": "tsawo_guanabana"
-    },
-    {
-      "nombre": "tsiru’ / tsuru’",
-      "imagen": "cacao",
-      "audio": "tsiru_cacao"
-    },
-    {
-      "nombre": "tu’ / salíröm / salírö",
-      "imagen": "tu_name",
-      "audio": "tu_name"
-    },
-    {
-      "nombre": "wë̀röm",
-      "imagen": "werom_cacao",
-      "audio": "werom_cacao"
-    },
-    {
-      "nombre": "wë̀shwö",
-      "imagen": "weshwo_cacao",
-      "audio": "weshwo_cacao"
     }
   ],
   "DulcesBebidas": [
     {
-      "nombre": "ãlë̀mus / ãlë̀muswö",
-      "imagen": "alemus_limon",
-      "audio": ""
-    },
-    {
-      "nombre": "amuwo / alabawö",
-      "imagen": "amuwo_pina",
-      "audio": ""
-    },
-    {
-      "nombre": "áshali / àshali",
-      "imagen": "ashali_naranja",
-      "audio": ""
-    },
-    {
-      "nombre": "àrros",
-      "imagen": "arroz_arros",
-      "audio": ""
-    },
-    {
       "nombre": "balo’ / blo’",
       "imagen": "balo_blo_poro",
       "audio": ""
-    },
-    {
-      "nombre": "bakö̀m",
-      "imagen": "cabeza_mono_bakom",
-      "audio": ""
-    },
-    {
-      "nombre": "bla’ / bala’",
-      "imagen": "bla_bala_granadilla",
-      "audio": "bla_granadilla"
-    },
-    {
-      "nombre": "bùlali",
-      "imagen": "bulali_miel",
-      "audio": "bulali_miel"
     },
     {
       "nombre": "di’",
@@ -637,18 +602,58 @@
       "audio": "di_agua"
     },
     {
-      "nombre": "diyë̀’",
-      "imagen": "diye_sal",
-      "audio": "diye_sal"
+      "nombre": "yulár",
+      "imagen": "yular_bebida",
+      "audio": ""
+    },
+    {
+      "nombre": "tsirûdiö̀ / tsurùdiö",
+      "imagen": "tsirudio_bebida",
+      "audio": ""
+    },
+    {
+      "nombre": "tsâ̱wö / tsò̱wö",
+      "imagen": "tsawo_guanabana",
+      "audio": "tsawo_guanabana"
+    },
+    {
+      "nombre": "bla’ / bala’",
+      "imagen": "bla_bala_granadilla",
+      "audio": "bla_granadilla"
+    },
+    {
+      "nombre": "tsiru’ / tsuru’",
+      "imagen": "cacao",
+      "audio": "tsiru_cacao"
+    },
+    {
+      "nombre": "salo’",
+      "imagen": "salo_cacao",
+      "audio": "salo_cacao"
+    },
+    {
+      "nombre": "to̱mò̱",
+      "imagen": "tomo_guaba",
+      "audio": "tomo_guaba"
+    },
+    {
+      "nombre": "páköl / pàsh",
+      "imagen": "pakol_pash_cana",
+      "audio": "pakol_pash_cana"
+    },
+    {
+      "nombre": "bakö̀m",
+      "imagen": "cabeza_mono_bakom",
+      "audio": ""
+    },
+    {
+      "nombre": "wë̀röm",
+      "imagen": "werom_cacao",
+      "audio": "werom_cacao"
     },
     {
       "nombre": "kalóm",
       "imagen": "kalom_zapote",
-      "audio": ""
-    },
-    {
-      "nombre": "kápi",
-      "imagen": "kapi_cafe",
       "audio": ""
     },
     {
@@ -657,19 +662,9 @@
       "audio": "kicho_papaya"
     },
     {
-      "nombre": "páköl / pàsh",
-      "imagen": "pakol_pash_cana",
-      "audio": "pakol_pash_cana"
-    },
-    {
-      "nombre": "páköl mũlë / bròbròchka",
-      "imagen": "pakol_azucar",
-      "audio": ""
-    },
-    {
-      "nombre": "salo’",
-      "imagen": "salo_cacao",
-      "audio": "salo_cacao"
+      "nombre": "wë̀shwö",
+      "imagen": "weshwo_cacao",
+      "audio": "weshwo_cacao"
     },
     {
       "nombre": "skuàlöm",
@@ -677,61 +672,61 @@
       "audio": "skualom"
     },
     {
-      "nombre": "to̱mò̱",
-      "imagen": "tomo_guaba",
-      "audio": "tomo_guaba"
+      "nombre": "bùlali",
+      "imagen": "bulali_miel",
+      "audio": "bulali_miel"
     },
     {
-      "nombre": "tsâ̱wö / tsò̱wö",
-      "imagen": "tsawo_guanabana",
-      "audio": "tsawo_guanabana"
-    },
-    {
-      "nombre": "tsiru’ / tsuru’",
-      "imagen": "cacao",
-      "audio": "tsiru_cacao"
-    },
-    {
-      "nombre": "tsirûdiö̀ / tsurùdiö",
-      "imagen": "tsirudio_bebida",
+      "nombre": "páköl mũlë / bròbròchka",
+      "imagen": "pakol_azucar",
       "audio": ""
     },
     {
-      "nombre": "wë̀röm",
-      "imagen": "werom_cacao",
-      "audio": "werom_cacao"
-    },
-    {
-      "nombre": "wë̀shwö",
-      "imagen": "weshwo_cacao",
-      "audio": "weshwo_cacao"
-    },
-    {
-      "nombre": "yulár",
-      "imagen": "yular_bebida",
+      "nombre": "amuwo / alabawö",
+      "imagen": "amuwo_pina",
       "audio": ""
+    },
+    {
+      "nombre": "àrros",
+      "imagen": "arroz_arros",
+      "audio": ""
+    },
+    {
+      "nombre": "kápi",
+      "imagen": "kapi_cafe",
+      "audio": ""
+    },
+    {
+      "nombre": "áshali / àshali",
+      "imagen": "ashali_naranja",
+      "audio": ""
+    },
+    {
+      "nombre": "ãlë̀mus / ãlë̀muswö",
+      "imagen": "alemus_limon",
+      "audio": ""
+    },
+    {
+      "nombre": "diyë̀’",
+      "imagen": "diye_sal",
+      "audio": "diye_sal"
     }
   ],
   "Utensilios": [
     {
+      "nombre": "ù̠",
+      "imagen": "u_olla",
+      "audio": "u_olla"
+    },
+    {
+      "nombre": "tabè",
+      "imagen": "tabe_cuchillo",
+      "audio": "tabe_cuchillo"
+    },
+    {
       "nombre": "ajkö́ / kö́",
       "imagen": "ajko_canasta",
       "audio": "ajko_canasta"
-    },
-    {
-      "nombre": "ako̠’ / aka̠’ / ko̠’",
-      "imagen": "ako_tapesco",
-      "audio": "ako_asador"
-    },
-    {
-      "nombre": "alö́k / lö̀k",
-      "imagen": "alok",
-      "audio": ""
-    },
-    {
-      "nombre": "datsù",
-      "imagen": "datsu_huacal",
-      "audio": "datsu_huacal"
     },
     {
       "nombre": "dichàjkuö / kulë’",
@@ -739,48 +734,18 @@
       "audio": "dichajkuo_batea"
     },
     {
+      "nombre": "ako̠’ / aka̠’ / ko̠’",
+      "imagen": "ako_tapesco",
+      "audio": "ako_asador"
+    },
+    {
       "nombre": "dùkö",
       "imagen": "duko_atizador",
       "audio": "duko_plumas"
     },
     {
-      "nombre": "jkuö̀k kiö̀ a̠ ",
-      "imagen": "jkuokkioa_sarten",
-      "audio": ""
-    },
-    {
-      "nombre": "ijkuö̀k bö́ a̠ ",
-      "imagen": "ijkuok_bo_a",
-      "audio": ""
-    },
-    {
       "nombre": "kakö’",
       "imagen": "kako",
-      "audio": ""
-    },
-    {
-      "nombre": "kàlsik",
-      "imagen": "kal_si",
-      "audio": "kalsik_hojas"
-    },
-    {
-      "nombre": "kuö́kwã",
-      "imagen": "kuokwa",
-      "audio": ""
-    },
-    {
-      "nombre": "sík",
-      "imagen": "sik_hoja",
-      "audio": ""
-    },
-    {
-      "nombre": "síkkö",
-      "imagen": "sikko",
-      "audio": "sikko"
-    },
-    {
-      "nombre": "síũk",
-      "imagen": "siuk_canasta",
       "audio": ""
     },
     {
@@ -789,9 +754,19 @@
       "audio": ""
     },
     {
-      "nombre": "tabè",
-      "imagen": "tabe_cuchillo",
-      "audio": "tabe_cuchillo"
+      "nombre": "datsù",
+      "imagen": "datsu_huacal",
+      "audio": "datsu_huacal"
+    },
+    {
+      "nombre": "kàlsik",
+      "imagen": "kal_si",
+      "audio": "kalsik_hojas"
+    },
+    {
+      "nombre": "sík",
+      "imagen": "sik_hoja",
+      "audio": ""
     },
     {
       "nombre": "tka̠’ / tcho̠’",
@@ -799,9 +774,34 @@
       "audio": "tka_tcho_huacal"
     },
     {
-      "nombre": "ù̠",
-      "imagen": "u_olla",
-      "audio": "u_olla"
+      "nombre": "síkkö",
+      "imagen": "sikko",
+      "audio": "sikko"
+    },
+    {
+      "nombre": "jkuö̀k kiö̀ a̠ ",
+      "imagen": "jkuokkioa_sarten",
+      "audio": ""
+    },
+    {
+      "nombre": "alö́k / lö̀k",
+      "imagen": "alok",
+      "audio": ""
+    },
+    {
+      "nombre": "síũk",
+      "imagen": "siuk_canasta",
+      "audio": ""
+    },
+    {
+      "nombre": "kuö́kwã",
+      "imagen": "kuokwa",
+      "audio": ""
+    },
+    {
+      "nombre": "ijkuö̀k bö́ a̠ ",
+      "imagen": "ijkuok_bo_a",
+      "audio": ""
     }
   ]
 }
