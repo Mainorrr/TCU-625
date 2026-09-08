@@ -1,24 +1,94 @@
 ﻿{
   "Animales": [
     {
-      "nombre": "ajkö́bite / kö́batẽ",
-      "imagen": "ajkobite_ardilla",
-      "audio": ""
-    },
-    {
-      "nombre": "ák nime / ák name",
-      "imagen": "ak_nime",
-      "audio": ""
-    },
-    {
-      "nombre": "ã’s / õ’s",
-      "imagen": "as_sargento",
-      "audio": ""
-    },
-    {
       "nombre": "awà",
       "imagen": "awa_nutria",
       "audio": ""
+    },
+    {
+      "nombre": "kalòk",
+      "imagen": "kalok_mapache",
+      "audio": "kalok_mapache"
+    },
+    {
+      "nombre": "sàl",
+      "imagen": "sal_mono",
+      "audio": "sal_mono"
+    },
+    {
+      "nombre": "ka̱no̱’",
+      "imagen": "kano_tepezcuintle",
+      "audio": "kano_tepezcuintle"
+    },
+    {
+      "nombre": "kàsir",
+      "imagen": "kasir",
+      "audio": "kasir_saino"
+    },
+    {
+      "nombre": "sa̱nò̱ mà̱t",
+      "imagen": "sanomat_perezoso",
+      "audio": "sanomat_perezoso"
+    },
+    {
+      "nombre": "kachúk",
+      "imagen": "kachuk_martilla",
+      "audio": "kachuk_martilla"
+    },
+    {
+      "nombre": "shulë̀",
+      "imagen": "shule_guatusa",
+      "audio": "shule_guatusa"
+    },
+    {
+      "nombre": "sini̠'",
+      "imagen": "sini_chancho",
+      "audio": "sini_chancho"
+    },
+    {
+      "nombre": "kàl su̠li̠",
+      "imagen": "kal_suli",
+      "audio": "kal_suli_venado"
+    },
+    {
+      "nombre": "suwë́",
+      "imagen": "sawe",
+      "audio": "suwe_liebre"
+    },
+    {
+      "nombre": "sinà",
+      "imagen": "sina_perezoso",
+      "audio": "sina_perezoso"
+    },
+    {
+      "nombre": "te su̠lì̠ ",
+      "imagen": "te_suli",
+      "audio": "tesuli_venado"
+    },
+    {
+      "nombre": "wìm",
+      "imagen": "wim_congo",
+      "audio": "wim_congo"
+    },
+    {
+      "nombre": "stsí’",
+      "imagen": "stsi_pizote",
+      "audio": "stsi_pizote"
+    },
+    {
+      "nombre": "di’skuë",
+      "imagen": "diskue_roedor",
+      "audio": "diskue_roedor"
+    },
+    {
+      "nombre": "tsawì / tsuwì / tsuì",
+      "imagen": "tsawi_armadillo",
+      "audio": "tsawi_armadillo"
+    },
+    {
+      "nombre": "kö̀chi",
+      "imagen": "kochi",
+      "audio": "kochi_chancho"
     },
     {
       "nombre": "bàka",
@@ -26,24 +96,14 @@
       "audio": "baka"
     },
     {
-      "nombre": "batsù",
-      "imagen": "batsu_colibri",
-      "audio": "batsu_colibri"
+      "nombre": "sú",
+      "imagen": "su_erizo",
+      "audio": "su_erizo"
     },
     {
-      "nombre": "batsìk",
-      "imagen": "batsik",
-      "audio": ""
-    },
-    {
-      "nombre": "bitë̀",
-      "imagen": "bite_ardilla",
-      "audio": "bite_ardilla"
-    },
-    {
-      "nombre": "bládu",
-      "imagen": "bladu_cardenal",
-      "audio": ""
+      "nombre": "ö̀k",
+      "imagen": "ok_mono",
+      "audio": "ok_mono"
     },
     {
       "nombre": "buà",
@@ -51,8 +111,33 @@
       "audio": ""
     },
     {
-      "nombre": "buà siõ'",
-      "imagen": "bua_huevo_iguana",
+      "nombre": "ajkö́bite / kö́batẽ",
+      "imagen": "ajkobite_ardilla",
+      "audio": ""
+    },
+    {
+      "nombre": "ská̱bite̱",
+      "imagen": "skabite_ardillaroja",
+      "audio": "skabite_ardillaroja"
+    },
+    {
+      "nombre": "bitë̀",
+      "imagen": "bite_ardilla",
+      "audio": "bite_ardilla"
+    },
+    {
+      "nombre": "ka̠lè̠m",
+      "imagen": "pez4",
+      "audio": "pez_kalem_"
+    },
+    {
+      "nombre": "kuàtchàki",
+      "imagen": "kuatchaki",
+      "audio": "kuatchaki"
+    },
+    {
+      "nombre": "ák nime / ák name",
+      "imagen": "ak_nime",
       "audio": ""
     },
     {
@@ -76,14 +161,139 @@
       "audio": ""
     },
     {
-      "nombre": "di’ bulu",
-      "imagen": "di_bulu",
-      "audio": ""
+      "nombre": "ni̠mà̠ ichö́k / na̠mà̠ ichö́k",
+      "imagen": "pez3",
+      "audio": "pez_nimaichok_bobo"
     },
     {
-      "nombre": "di’skuë",
-      "imagen": "diskue_roedor",
-      "audio": "diskue_roedor"
+      "nombre": "sö̀",
+      "imagen": "so_tortuga",
+      "audio": "so_tortuga"
+    },
+    {
+      "nombre": "só",
+      "imagen": "so_camaron",
+      "audio": "so_camaron"
+    },    
+    {
+      "nombre": "sichìk / stchìk",
+      "imagen": "pez6_roncador",
+      "audio": "pez_sichik_roncador"
+    },
+    {
+      "nombre": "pó̱ kuë / ö̀lë kuë",
+      "imagen": "pokue_tortuga",
+      "audio": "pokue_tortuga"
+    },
+    {
+      "nombre": "shawa’ / shuwa",
+      "imagen": "pez5_dormilon",
+      "audio": "pez_shawa_dormilon"
+    },
+    {
+      "nombre": "tsaí̠ ni̠me̠ / tsaí̠ na̠me̠ / sinì ni̠me̠ / sinì na̠me̠",
+      "imagen": "pez8",
+      "audio": "pez_tsaname_robalo"
+    },
+    {
+      "nombre": "wàtak",
+      "imagen": "pez9_machaca",
+      "audio": "pez_watak_machaca"
+    },
+    {
+      "nombre": "yawi’",
+      "imagen": "yawi_cangrejo",
+      "audio": "yawi_cangrejo"
+    },
+    {
+      "nombre": "tòsh",
+      "imagen": "tosh_pez_cuchara",
+      "audio": "tosh_pez_cuchara"
+    },
+    {
+      "nombre": "talók kuë̀",
+      "imagen": "tlokkue_tortuga",
+      "audio": "tlokkue_tortuga"
+    },
+    {
+      "nombre": "të̀brush / yë̀böwö",
+      "imagen": "pez7_sargento",
+      "audio": "pez_tebrush_sargento"
+    },
+    {
+      "nombre": "suli tchabe / suli tkabe",
+      "imagen": "suli_tchabe_serpiente",
+      "audio": "sulitchabe_serpiente"
+    },
+    {
+      "nombre": "wë́k",
+      "imagen": "wek_jilguero",
+      "audio": "wek_jilguero"
+    },
+    {
+      "nombre": "su̱lì̱nu̱böl",
+      "imagen": "suli_nobol_paloma",
+      "audio": "suli_nubol_paloma"
+    },
+    {
+      "nombre": "tsiö̀",
+      "imagen": "tucan",
+      "audio": "tsio_tucan"
+    },
+    {
+      "nombre": "tràk",
+      "imagen": "trak",
+      "audio": "trak"
+    },
+    {
+      "nombre": "tó̱köl",
+      "imagen": "tokol_pato",
+      "audio": "tokol_pato"
+    },
+    {
+      "nombre": "urrë̀k",
+      "imagen": "urrek_tucan",
+      "audio": "urrek_tucan"
+    },
+    {
+      "nombre": "tuá",
+      "imagen": "tua_pajaro_momoto",
+      "audio": "tua_pajaro_momoto"
+    },
+    {
+      "nombre": "tsanè",
+      "imagen": "tsane_carpintero",
+      "audio": "tsane_carpintero"
+    },
+    {
+      "nombre": "batsù",
+      "imagen": "batsu_colibri",
+      "audio": "batsu_colibri"
+    },
+    {
+      "nombre": "tkù / tchù",
+      "imagen": "tku_gallinamonte",
+      "audio": "tku_gallinamonte"
+    },
+    {
+      "nombre": "mu̠lùkayö / ku̠ku̠ wö̀ tsurùrù / ku̠ku̠lé̠ wö̀ sarùrù",
+      "imagen": "mulukayo",
+      "audio": "mulukayo_perico"
+    },
+    {
+      "nombre": "sawíyök dakur / sawíyök dukur",
+      "imagen": "sawiyokdakur_murcielago",
+      "audio": "sawiyokdakur_murcielago"
+    },
+    {
+      "nombre": "kaë̀",
+      "imagen": "kae",
+      "audio": "kae_pava"
+    },
+    {
+      "nombre": "talìdakur / talìdukúr",
+      "imagen": "talidakur_murcielago",
+      "audio": "talidakur_murcielago"
     },
     {
       "nombre": "dó",
@@ -91,8 +301,8 @@
       "audio": "do_paloma"
     },
     {
-      "nombre": "dù siõ’",
-      "imagen": "du_huevo_pajaro",
+      "nombre": "bládu",
+      "imagen": "bladu_cardenal",
       "audio": ""
     },
     {
@@ -101,74 +311,14 @@
       "audio": "duwe_pavon"
     },
     {
-      "nombre": "kachúk",
-      "imagen": "kachuk_martilla",
-      "audio": "kachuk_martilla"
-    },
-    {
-      "nombre": "kaë̀",
-      "imagen": "kae",
-      "audio": "kae_pava"
-    },
-    {
-      "nombre": "ka̠lè̠m",
-      "imagen": "pez4",
-      "audio": "pez_kalem_"
-    },
-    {
-      "nombre": "kàsir",
-      "imagen": "kasir",
-      "audio": "kasir_saino"
-    },
-    {
-      "nombre": "kàl su̠li̠",
-      "imagen": "kal_suli",
-      "audio": "kal_suli_venado"
-    },
-    {
-      "nombre": "kalòk",
-      "imagen": "kalok_mapache",
-      "audio": "kalok_mapache"
-    },
-    {
-      "nombre": "ka̱no̱’",
-      "imagen": "kano_tepezcuintle",
-      "audio": "kano_tepezcuintle"
-    },
-    {
-      "nombre": "kö̀chi",
-      "imagen": "kochi",
-      "audio": "kochi_chancho"
-    },
-    {
-      "nombre": "kuàtchàki",
-      "imagen": "kuatchaki",
-      "audio": "kuatchaki"
-    },
-    {
-      "nombre": "kuë siõ’",
-      "imagen": "kue_huevo_tortuga",
+      "nombre": "di’ bulu",
+      "imagen": "di_bulu",
       "audio": ""
     },
     {
-      "nombre": "mu̠lùkayö / ku̠ku̠ wö̀ tsurùrù / ku̠ku̠lé̠ wö̀ sarùrù",
-      "imagen": "mulukayo",
-      "audio": "mulukayo_perico"
-    },
-    {
-      "nombre": "namà siõ’",
-      "imagen": "nama_huevo_pez",
+      "nombre": "ã’s / õ’s",
+      "imagen": "as_sargento",
       "audio": ""
-    },
-    {
-      "nombre": "ni̠mà̠ ichö́k / na̠mà̠ ichö́k",
-      "imagen": "pez3",
-      "audio": "pez_nimaichok_bobo"
-    },
-    {
-      "nombre": "ö̀k",
-      "imagen": "ok_mono",
-      "audio": "ok_mono"
     },
     {
       "nombre": "pi̱a̱’",
@@ -176,206 +326,36 @@
       "audio": "pia_urraca"
     },
     {
-      "nombre": "pó̱ kuë / ö̀lë kuë",
-      "imagen": "pokue_tortuga",
-      "audio": "pokue_tortuga"
+      "nombre": "batsìk",
+      "imagen": "batsik",
+      "audio": ""
     },
     {
-      "nombre": "sàl",
-      "imagen": "sal_mono",
-      "audio": "sal_mono"
+      "nombre": "kuë siõ’",
+      "imagen": "kue_huevo_tortuga",
+      "audio": ""
     },
     {
-      "nombre": "sa̱nò̱ mà̱t",
-      "imagen": "sanomat_perezoso",
-      "audio": "sanomat_perezoso"
+      "nombre": "dù siõ’",
+      "imagen": "du_huevo_pajaro",
+      "audio": ""
     },
     {
-      "nombre": "sawíyök dakur / sawíyök dukur",
-      "imagen": "sawiyokdakur_murcielago",
-      "audio": "sawiyokdakur_murcielago"
+      "nombre": "namà siõ’",
+      "imagen": "nama_huevo_pez",
+      "audio": ""
     },
     {
-      "nombre": "shawa’ / shuwa",
-      "imagen": "pez5_dormilon",
-      "audio": "pez_shawa_dormilon"
-    },
-    {
-      "nombre": "shulë̀",
-      "imagen": "shule_guatusa",
-      "audio": "shule_guatusa"
-    },
-    {
-      "nombre": "sichìk / stchìk",
-      "imagen": "pez6_roncador",
-      "audio": "pez_sichik_roncador"
-    },
-    {
-      "nombre": "sinà",
-      "imagen": "sina_perezoso",
-      "audio": "sina_perezoso"
-    },
-    {
-      "nombre": "sini̠'",
-      "imagen": "sini_chancho",
-      "audio": "sini_chancho"
-    },
-    {
-      "nombre": "ská̱bite̱",
-      "imagen": "skabite_ardillaroja",
-      "audio": "skabite_ardillaroja"
-    },
-    {
-      "nombre": "só",
-      "imagen": "so_camaron",
-      "audio": "so_camaron"
-    },
-    {
-      "nombre": "sö̀",
-      "imagen": "so_tortuga",
-      "audio": "so_tortuga"
-    },
-    {
-      "nombre": "stsí’",
-      "imagen": "stsi_pizote",
-      "audio": "stsi_pizote"
-    },
-    {
-      "nombre": "sú",
-      "imagen": "su_erizo",
-      "audio": "su_erizo"
-    },
-    {
-      "nombre": "suli tchabe / suli tkabe",
-      "imagen": "suli_tchabe_serpiente",
-      "audio": "sulitchabe_serpiente"
-    },
-    {
-      "nombre": "su̱lì̱nu̱böl",
-      "imagen": "suli_nobol_paloma",
-      "audio": "suli_nubol_paloma"
-    },
-    {
-      "nombre": "suwë́",
-      "imagen": "sawe",
-      "audio": "suwe_liebre"
-    },
-    {
-      "nombre": "talìdakur / talìdukúr",
-      "imagen": "talidakur_murcielago",
-      "audio": "talidakur_murcielago"
-    },
-    {
-      "nombre": "të̀brush / yë̀böwö",
-      "imagen": "pez7_sargento",
-      "audio": "pez_tebrush_sargento"
-    },
-    {
-      "nombre": "te su̠lì̠ ",
-      "imagen": "te_suli",
-      "audio": "tesuli_venado"
-    },
-    {
-      "nombre": "tkù / tchù",
-      "imagen": "tku_gallinamonte",
-      "audio": "tku_gallinamonte"
-    },
-    {
-      "nombre": "talók kuë̀",
-      "imagen": "tlokkue_tortuga",
-      "audio": "tlokkue_tortuga"
-    },
-    {
-      "nombre": "tó̱köl",
-      "imagen": "tokol_pato",
-      "audio": "tokol_pato"
-    },
-    {
-      "nombre": "tòsh",
-      "imagen": "tosh_pez_cuchara",
-      "audio": "tosh_pez_cuchara"
-    },
-    {
-      "nombre": "tràk",
-      "imagen": "trak",
-      "audio": "trak"
-    },
-    {
-      "nombre": "tsaí̠ ni̠me̠ / tsaí̠ na̠me̠ / sinì ni̠me̠ / sinì na̠me̠",
-      "imagen": "pez8",
-      "audio": "pez_tsaname_robalo"
-    },
-    {
-      "nombre": "tsanè",
-      "imagen": "tsane_carpintero",
-      "audio": "tsane_carpintero"
-    },
-    {
-      "nombre": "tsawì / tsuwì / tsuì",
-      "imagen": "tsawi_armadillo",
-      "audio": "tsawi_armadillo"
-    },
-    {
-      "nombre": "tsiö̀",
-      "imagen": "tucan",
-      "audio": "tsio_tucan"
-    },
-    {
-      "nombre": "tuá",
-      "imagen": "tua_pajaro_momoto",
-      "audio": "tua_pajaro_momoto"
-    },
-    {
-      "nombre": "urrë̀k",
-      "imagen": "urrek_tucan",
-      "audio": "urrek_tucan"
-    },
-    {
-      "nombre": "wàtak",
-      "imagen": "pez9_machaca",
-      "audio": "pez_watak_machaca"
-    },
-    {
-      "nombre": "wë́k",
-      "imagen": "wek_jilguero",
-      "audio": "wek_jilguero"
-    },
-    {
-      "nombre": "wìm",
-      "imagen": "wim_congo",
-      "audio": "wim_congo"
-    },
-    {
-      "nombre": "yawi’",
-      "imagen": "yawi_cangrejo",
-      "audio": "yawi_cangrejo"
+      "nombre": "buà siõ'",
+      "imagen": "bua_huevo_iguana",
+      "audio": ""
     }
   ],
   "AnimalesEspeciales": [
     {
-      "nombre": "alö̀buk / alö̀bök",
-      "imagen": "alobuk",
-      "audio": ""
-    },
-    {
       "nombre": "apà / pà",
       "imagen": "apa",
       "audio": "apa_lora"
-    },
-    {
-      "nombre": "dakòlum",
-      "imagen": "dakolum_puma",
-      "audio": ""
-    },
-    {
-      "nombre": "dulë́kalöm",
-      "imagen": "dulekalom_jaguar",
-      "audio": "dulekalom_jaguar"
-    },
-    {
-      "nombre": "kabék",
-      "imagen": "kabek_quetzal",
-      "audio": ""
     },
     {
       "nombre": "ku̠ko̠’",
@@ -383,14 +363,14 @@
       "audio": "kuko_guacamaya"
     },
     {
-      "nombre": "na̠i̠’",
-      "imagen": "nai",
-      "audio": "nai_danta"
+      "nombre": "kabék",
+      "imagen": "kabek_quetzal",
+      "audio": ""
     },
     {
-      "nombre": "na̱mù dalòlò",
-      "imagen": "namudalolo_puma",
-      "audio": "namudalolo_puma"
+      "nombre": "wàkö",
+      "imagen": "wako_gavilan",
+      "audio": "wako_gavilan"
     },
     {
       "nombre": "ö̀k pu / sàl pu",
@@ -398,14 +378,34 @@
       "audio": "okpu_lechuza"
     },
     {
+      "nombre": "dakòlum",
+      "imagen": "dakolum_puma",
+      "audio": ""
+    },
+    {
       "nombre": "stsa’na̱me̱’",
       "imagen": "stsaname_manigordo",
       "audio": "stsaname_manigordo"
     },
     {
-      "nombre": "wàkö",
-      "imagen": "wako_gavilan",
-      "audio": "wako_gavilan"
+      "nombre": "dulë́kalöm",
+      "imagen": "dulekalom_jaguar",
+      "audio": "dulekalom_jaguar"
+    },
+    {
+      "nombre": "alö̀buk / alö̀bök",
+      "imagen": "alobuk",
+      "audio": ""
+    },
+    {
+      "nombre": "na̱mù dalòlò",
+      "imagen": "namudalolo_puma",
+      "audio": "namudalolo_puma"
+    },
+    {
+      "nombre": "na̠i̠’",
+      "imagen": "nai",
+      "audio": "nai_danta"
     }
   ],
   "Vegetales": [
