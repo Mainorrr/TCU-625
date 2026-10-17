@@ -1,32 +1,32 @@
 [
-    {
-        "nombre": "Animales",
-        "nombreBribri": "Íyiwak ena íyiwak siõˈ",
-        "imagen": "kochi"
-    },
-    {
-        "nombre": "AnimalesEspeciales",
-        "nombreBribri": "Íyiwak íse katéke bitsé tã",
-        "imagen": "apa"
-    },
-    {
-        "nombre": "DulcesBebidas", 
-        "nombreBribri": "Yè, chĩˈwö ena síkua chkè",
-        "imagen": "bulali_miel"
-    },
-    {
-        "nombre": "Vegetales", 
-        "nombreBribri": "Kàlwö ena ár",
-        "imagen": "kalom_zapote"
-    },
-    {
-        "nombre": "Utensilios",
-        "nombreBribri": "Wes i alèke ena tkãˈ / tchõˈ",
-        "imagen": "tabe_cuchillo"
-    },
-    {
-        "nombre": "Aleatorio",
-        "nombreBribri": "Íyi ulìtãne",
-        "imagen": "portada_6"
-    }
+  {
+    "nombre": "Animales",
+    "nombreBribri": "Íyiwak ena íyiwak siõˈ",
+    "imagen": "kochi"
+  },
+  {
+    "nombre": "AnimalesEspeciales",
+    "nombreBribri": "Íyiwak íse katéke bitsé tã",
+    "imagen": "apa"
+  },
+  {
+    "nombre": "DulcesBebidas",
+    "nombreBribri": "Yè, chĩˈwö ena síkua chkè",
+    "imagen": "bulali_miel"
+  },
+  {
+    "nombre": "Vegetales",
+    "nombreBribri": "Kàlwö ena ár",
+    "imagen": "kalom_zapote"
+  },
+  {
+    "nombre": "Utensilios",
+    "nombreBribri": "Wes i alèke ena tkãˈ / tchõˈ",
+    "imagen": "tabe_cuchillo"
+  },
+  {
+    "nombre": "Aleatorio",
+    "nombreBribri": "Íyi ulìtãne",
+    "imagen": "portada_6"
+  }
 ]

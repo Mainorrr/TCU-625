@@ -78,7 +78,9 @@
   margin: 0 auto;
   border-radius: 2px;
   background: var(--color-text-on-primary);
-  transition: transform 0.25s ease, opacity 0.2s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.2s ease;
 }
 
 .header__toggle--open .header__bar:nth-child(1) {

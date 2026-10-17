@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import logo from '../../assets/common/logo.png';
-import './Header.css';
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import logo from "../../assets/common/logo.png";
+import "./Header.css";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -15,8 +15,8 @@ function Header() {
 
       <button
         type="button"
-        className={'header__toggle' + (open ? ' header__toggle--open' : '')}
-        aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+        className={"header__toggle" + (open ? " header__toggle--open" : "")}
+        aria-label={open ? "Cerrar menú" : "Abrir menú"}
         aria-expanded={open}
         aria-controls="header-nav"
         onClick={() => setOpen((v) => !v)}
@@ -28,14 +28,34 @@ function Header() {
 
       <nav
         id="header-nav"
-        className={'header__nav-wrap' + (open ? ' header__nav-wrap--open' : '')}
+        className={"header__nav-wrap" + (open ? " header__nav-wrap--open" : "")}
       >
         <ul className="header__nav">
-          <li><NavLink to="/" end onClick={close}>Práctica</NavLink></li>
-          <li><NavLink to="/vocabulario" onClick={close}>Vocabulario</NavLink></li>
-          <li><NavLink to="/sobre-este-recurso" onClick={close}>Sobre este recurso</NavLink></li>
-          <li><NavLink to="/creditos" onClick={close}>Créditos</NavLink></li>
-          <li><NavLink to="/sobre-el-tcu-625" onClick={close}>Sobre el TCU-625</NavLink></li>
+          <li>
+            <NavLink to="/" end onClick={close}>
+              Inicio
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/pronunciacion" onClick={close}>
+              Pronunciación
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/sobre-este-recurso" onClick={close}>
+              Sobre este recurso
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/creditos" onClick={close}>
+              Créditos
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/sobre-el-tcu-625" onClick={close}>
+              Sobre el TCU-625
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
