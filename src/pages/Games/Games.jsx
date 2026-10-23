@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import secciones from "../../assets/bribri_words/secciones.json";
+import recetario from "../../assets/bribri_words/recetario.json";
 import { getImage } from "../Pronunciation/assetMaps.js";
 import "./Games.css";
 
@@ -14,6 +15,26 @@ function Games() {
       })),
     [],
   );
+  const gruposIlustraciones = useMemo(
+    () =>
+      secciones
+        .filter((categoria) => categoria.nombre !== "Aleatorio")
+        .map((categoria) => ({
+          ...categoria,
+          palabras: (recetario[categoria.nombre] ?? [])
+            .filter((palabra) => palabra.imagen && getImage(palabra.imagen))
+            .slice(0, 6),
+        })),
+    [],
+  );
+  const collage = useMemo(
+    () =>
+      gruposIlustraciones
+        .flatMap((grupo) => grupo.palabras)
+        .map((palabra, index) => ({ ...palabra, index }))
+        .slice(0, 20),
+    [gruposIlustraciones],
+  );
 
   return (
     <main className="games">
@@ -25,9 +46,7 @@ function Games() {
         </p>
       </header>
 
-      {/* Categorías: van ARRIBA del cuadrado blanco para poder seleccionarlas apenas entrar */}
       <section className="games__categories" aria-label="Categorías">
-        <label className="games__categories-label">Categorías</label>
         <div className="games__grid">
           {categorias.map((c) => (
             <button
@@ -57,10 +76,28 @@ function Games() {
         </div>
       </section>
 
-      {/* Cuadrado blanco de reemplazo (debajo de las categorías) */}
-      <div className="games__hero" aria-label="Portada">
-        <div className="games__square" aria-hidden="true" />
-      </div>
+      <section className="games__hero" aria-label="Alimentos y animales Bribri">
+        <span className="games__landscape games__landscape--back" aria-hidden="true" />
+        <span className="games__landscape games__landscape--front" aria-hidden="true" />
+        <div className="games__collage" aria-hidden="true">
+          {collage.map((palabra) => (
+            <img
+              key={`${palabra.imagen}-${palabra.index}`}
+              className="games__floating"
+              src={getImage(palabra.imagen)}
+              alt=""
+              loading="lazy"
+              style={{
+                "--delay": `${-0.37 * palabra.index}s`,
+                "--left": `${10 + (palabra.index % 5) * 20 + (palabra.index % 2 ? 3 : -3)}%`,
+                "--top": `${19 + Math.floor(palabra.index / 5) * 20 + (palabra.index % 3) * 2}%`,
+                "--size": `${58 + ((palabra.index * 13) % 35)}px`,
+                "--tilt": `${(palabra.index % 2 ? 1 : -1) * (8 + (palabra.index % 5) * 3)}deg`,
+              }}
+            />
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
